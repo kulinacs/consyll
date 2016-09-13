@@ -4,6 +4,8 @@ _site
 Gemfile.lock
 _config.yml
 *.md
+!README.md
 index.html
 _posts
 css
+*.gem
