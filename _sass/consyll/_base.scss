@@ -1,0 +1,39 @@
+/**
+ * Page Defaults
+ */
+body {
+	background-color: $background-color;
+	color: $text-color;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	color: $accent-color;
+}
+
+.container {
+	background-color: lighten($background-color, 1%);
+	border: 1px solid darken($accent-color, 20%);
+	border-radius: 2px;
+	box-shadow: 10px 10px 20px darken($background-color, 5%);
+	margin: 25px 10px;
+	text-align: left;
+
+	h1,h2,h3,h4,h5,h6 {		
+		a {
+			color: $text-color;
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.statusbar {
+	color: $accent-color;
+}
+
+.buffer {
+	padding: 2px 20px;
+}

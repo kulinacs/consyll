@@ -1,0 +1,33 @@
+// Define defaults for each variable.
+
+$text-color:       #ededed !default;
+$background-color: #191919 !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+// Navigation bar
+$accent-color:  #52FE27 !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials.
+@import
+  "consyll/base",
+  "consyll/fonts",
+  "consyll/layout"
+;

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="container" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="buffer">
+	<header class="post-header">
+      <h1 class="post-title" itemprop="name headline"><span class="accent">&gt;</span> {{ page.title | escape }}</h1>
+    </header>
+	<div class="post-content" itemprop="articleBody">
+      {{ content }}
+	</div>
+  </div>
+  <div class="statusbar">
+	<div class="buffer">
+	  <time datetime="{{ page.date }}" itemprop="datePublished">{{ page.date }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
+	</div>
+  </div>
+</article>

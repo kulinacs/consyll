@@ -1,0 +1,68 @@
+/**
+ * Site Header
+ */
+header {
+	width: 100%;
+	text-align: center;
+}
+
+.site-title {
+	font-size: 6vw;
+	font-family: 'Open Sans', sans-serif;
+	color: $accent-color;
+	text-decoration: none;
+}
+
+.header-hr {
+	border-top: 1px solid darken($accent-color, 20%);
+	border-bottom: 0px;
+	width: 80%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.nav-link {
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	color: $text-color;
+	display: inline-block;
+	text-decoration: none;
+	padding: 0px 10px;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+/**
+ * Post Content
+ */
+
+.post-header {
+	text-align: left;
+	font-size: 24px;
+}
+
+.post-title {
+	margin: 20px 0px;
+}
+
+
+/**
+ * All content
+ */
+.wrapper {
+    width: 70%;
+	margin: auto;
+}
+
+.accent {
+	color: $accent-color;
+}
+
+@include media-query($on-palm) {
+    .wrapper {
+		width: 95%;
+		margin: auto;
+	}
+}
+

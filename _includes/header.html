@@ -1,0 +1,12 @@
+<header role="banner">
+  <a href="{{ '/' | prepend: site.baseurl }}" class="site-title">{{ site.title | escape }}</a>
+  <hr class="header-hr">
+  <nav>
+      {% for my_page in site.pages %}
+      {% if my_page.title %}
+      <a class="nav-link" href="{{ my_page.url | prepend: site.baseurl }}"><span class="accent">&gt;</span> {{ my_page.title | escape }}</a>
+      {% endif %}
+      {% endfor %}
+  </nav>
+  <hr class="header-hr">
+</header>
